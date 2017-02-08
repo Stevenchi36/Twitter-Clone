@@ -50,8 +50,8 @@ module.exports = {
     connection: {
       host: Env.get('DB_HOST', 'localhost'),
       user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis')
+      password: Env.get('DB_PASSWORD', ''),//password on right
+      database: Env.get('DB_DATABASE', 'adonis')//Change name from "adonis" to anything lese
     }
   },
 
