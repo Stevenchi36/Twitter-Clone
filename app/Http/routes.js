@@ -17,7 +17,7 @@
 
 const Route = use('Route')
 
-Route.on('/').render('home')
+Route.get('/', 'HomeTweetsController.index')
 Route.on('/login').render('login')
 Route.on('/newAccount').render('newAccount')
 Route.on('/deleteProfile').render('deleteProfile')
