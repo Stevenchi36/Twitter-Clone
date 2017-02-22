@@ -19,7 +19,7 @@ const Route = use('Route')
 
 Route.get('/', 'HomeTweetsController.index')
 Route.on('/login').render('login')
-Route.on('/newAccount').render('newAccount')
+Route.on('/register').render('newAccount')
 Route.on('/deleteProfile').render('deleteProfile')
 Route.on('/me').render('me')
 Route.on('/viewTweet').render('showTweet')
