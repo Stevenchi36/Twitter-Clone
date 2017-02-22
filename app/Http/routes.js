@@ -19,8 +19,10 @@ const Route = use('Route')
 
 Route.get('/', 'HomeTweetsController.index')
 //Route.on('/login').render('login')
+//LOGIN
 Route.get('/login', 'AuthController.index')
 Route.post('/login', 'AuthController.login')
+//REGISTER
 Route.get('/register', 'RegisterController.index')
 Route.post('/register', 'RegisterController.doRegister')
 Route.on('/deleteProfile').render('deleteProfile')
