@@ -3,6 +3,8 @@
 {% block content %}
     {% if currentUser %}
         <h1 class="title">HOME PAGE</h1>
+        <textarea class="createTweet" rows="3" cols="50" maxlength="160" placeholder="Enter Tweet Here">
+        </textarea>
         {% for twit in tweets %}
             <div class="tweetContainer">
                 <p class="tweetUsername">{{ twit.userID }}</p>

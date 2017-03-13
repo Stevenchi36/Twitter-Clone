@@ -24,6 +24,7 @@
                 <li style="float:right" class="contactMeList"><a class="contactMe" href="/register" onClick="changeActiveContact()" title="Go to Contact Info">Create Account</a></li>
                 <li style="float:right" class="contactMeList"><a class="contactMe" href="/login" onClick="changeActiveContact()" title="Go to Contact Info">Login</a></li>
             {% else %}
+                <li style="float:right" class="contactMeList"><a class="contactMe" href="/logout" onClick="changeActiveContact()" title="Go to Contact Info">Logout</a></li>
                 <li style="float:right" class="contactMeList"><a class="contactMe" href="#contactMe" onClick="changeActiveContact()" title="Go to Contact Info">{{ currentUser.username }}</a></li>
             {% endif %}
         </ul>

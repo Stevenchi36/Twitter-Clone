@@ -22,6 +22,9 @@ Route.get('/', 'HomeTweetsController.index')
 //LOGIN
 Route.get('/login', 'AuthController.index')
 Route.post('/login', 'AuthController.login')
+//LOGOUT
+Route.get('/logout', 'AuthController.index')
+Route.post('/logout', 'AuthController.logout')
 //REGISTER
 Route.get('/register', 'RegisterController.index')
 Route.post('/register', 'RegisterController.doRegister')
