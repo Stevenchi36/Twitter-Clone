@@ -28,6 +28,9 @@ Route.post('/logout', 'AuthController.logout')
 //REGISTER
 Route.get('/register', 'RegisterController.index')
 Route.post('/register', 'RegisterController.doRegister')
+//TWEET
+Route.get('tweet/create', 'HomeTweetsController.create')
+Route.get('tweet', 'HomeTweetsController.store')
 Route.on('/deleteProfile').render('deleteProfile')
 Route.on('/me').render('me')
 Route.on('/viewTweet').render('showTweet')

@@ -13,6 +13,8 @@
                 <p class="tweetUsername">{{ twit.userID }}</p>
                 <div class="tweet"><p class="tweetContent">{{ twit.content }}</p></div>
             </div>
+            {% else %}
+                <h2 class="noPostFound">No posts found</h2>
         {% endfor %}
     {% endif %}
     {% if not currentUser %}
